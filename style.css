@@ -1,0 +1,115 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background-color: #E0C8B0;
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/Parisish.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.center {
+    padding: 2%;
+    margin: 2%;
+    wifth:80%;
+}
+
+/* Header & Navigation */
+header {
+    width: 100%;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 1%; /* Optional: Add a small top padding */
+    padding-bottom: 0; /* Ensure there's no bottom padding if it's not needed */
+}
+
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto; /* Centers the nav content */
+}
+
+#logo {
+    text-decoration: none;
+    color: #6B8BAB;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 20px; /* Adds space between each list item */
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #6B8BAB;
+    font-size: 18px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #BB5C46; /* Changes color on hover */
+}
+
+/* Menu specific styles */
+#menu {
+    color: #BB5C46;
+}
+
+.description {
+    margin-top: 1%;
+    font-size: 1rem;
+    width: 100%;
+    color: #6B8BAB;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align items in the center vertically */
+    gap: 20px; /* Optional: Adds space between the image and text */
+}
+
+#main_img {
+    width: 40%;
+    height: auto; /* Let the height scale proportionally */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.description h1{
+    font-size: 5.5rem;
+    font-family: 'MyCustomFont';
+}
+.description .description_text{
+    display: flex;
+    flex-direction: column;
+    width:30%;
+
+}
+
+.button_ordernow{
+    color:#6B8BAB;
+    border:#BB5C46 1px solid;
+    border-radius: 30%;
+    padding:2%;
+    width:30%;
+    cursor: pointer;
+    margin-top: 4%;
+}
+.button_ordernow:hover{
+color:#BB5C46;
+}

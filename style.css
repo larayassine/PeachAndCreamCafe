@@ -1,115 +1,147 @@
-/* Global Styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Limelight&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    background-color: #E0C8B0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: 'MyCustomFont';
-    src: url('fonts/Parisish.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "customfont";
+  src: url("fonts/Parisish.ttf") format("truetype");
+  font-style: normal;
 }
 
-.center {
-    padding: 2%;
-    margin: 2%;
-    wifth:80%;
+/* Apply the custom font globally */
+body {
+  font-family: "MyCustomFont", sans-serif; /* Use the custom font */
 }
 
-/* Header & Navigation */
-header {
-    width: 100%;
-    padding-left: 6%;
-    padding-right: 6%;
-    padding-top: 1%; /* Optional: Add a small top padding */
-    padding-bottom: 0; /* Ensure there's no bottom padding if it's not needed */
+body {
+  font-family: Poppins;
+  font-size: 16px;
+  color: #6b8bab;
+  background-color: #e0c8b0;
 }
 
-
-nav {
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto; /* Centers the nav content */
+.container {
+  max-width: 90%;
+  background-color: #e0c8b0;
+  margin: 0 auto;
+  padding: 0 10%;
 }
 
-#logo {
-    text-decoration: none;
-    color: #6B8BAB;
-    font-size: 25px;
+.logo {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar {
+  height:8em;
+  font-family: poppins;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar .container ul {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #6b8bab;
+  font-weight: 600;
+}
+.navbar a:hover {
+  color: #bb5c46;
+}
+
+.nav .menu_nav a {
+  color: #bb5c46;
+}
+.nav .menu_nav a:hover {
     font-weight: 800;
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    gap: 20px; /* Adds space between each list item */
+.navbar ul li {
+  margin-left: 15px;
+}
+header{ 
+    position: relative;
+    padding-top:5%;
+
+}
+header .container {
+  
+  display: flex;
+  justify-content: center;
+  align-items: start;
 }
 
-nav ul li {
-    list-style: none;
-}
+header .main_description {
+  max-width: 40%;
 
-nav ul li a {
-    text-decoration: none;
-    color: #6B8BAB;
-    font-size: 18px;
-    font-weight: 700;
-    transition: color 0.3s ease;
-}
+  display: flex;
+  flex-direction: column;
+   background-color: rgba(224, 200, 176, 0.7);
+   border-radius: 20%;
+   padding:5%;
+   
+   position:absolute;
+   left:20%;
+   z-index:1;
+     box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.3); 
 
-nav ul li a:hover {
-    color: #BB5C46; /* Changes color on hover */
-}
-
-/* Menu specific styles */
-#menu {
-    color: #BB5C46;
-}
-
-.description {
-    margin-top: 1%;
-    font-size: 1rem;
-    width: 100%;
-    color: #6B8BAB;
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Align items in the center vertically */
-    gap: 20px; /* Optional: Adds space between the image and text */
-}
-
-#main_img {
-    width: 40%;
-    height: auto; /* Let the height scale proportionally */
-    object-fit: cover; /* Maintain aspect ratio */
-}
-
-.description h1{
-    font-size: 5.5rem;
-    font-family: 'MyCustomFont';
-}
-.description .description_text{
-    display: flex;
-    flex-direction: column;
-    width:30%;
 
 }
 
-.button_ordernow{
-    color:#6B8BAB;
-    border:#BB5C46 1px solid;
+header h1 {
+  font-size: 3rem;
+    line-height: 3rem;
+  font-family: limelight;
+  text-transform: uppercase;
+}
+
+header p {
+  line-height: 1.3rem;
+  font-size: 1rem;
+  max-width: 70%;
+}
+
+.main_image{
+position: relative;
+left:20%;
+top:-17em;
+width:50%;
+height: auto; 
+
+}
+
+.main_btn{
+    background-color: transparent;
+    text-transform: uppercase;
+    border: solid 1px #bb5c46;
+    color:#6b8bab;
+    font-weight: bold;
     border-radius: 30%;
     padding:2%;
-    width:30%;
-    cursor: pointer;
-    margin-top: 4%;
+    width:40%;
+    margin-top: 5%;
+
 }
-.button_ordernow:hover{
-color:#BB5C46;
+.main_btn:hover{
+    color:#bb5c46;
+        font-weight: 600;
 }

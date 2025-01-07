@@ -152,7 +152,7 @@ header .container{
 
 .coffee_intro .container{
   height:30rem;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 .coffee_intro .all_items {
   display: flex;
@@ -203,15 +203,13 @@ header .container{
   background-color: rgba(28,48,39,0.6);
   box-shadow: 30px 30px 20px rgba(0,0,0,0.2);
 padding:1%;
-
+margin-left: 2%;
 
 }
 
-.carousel-content{
-  margin-bottom:10%;
-}
+
 .card h1{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: 'Brawler';
 }
 .card p{
@@ -243,12 +241,10 @@ align-items:end ;
   text-transform: uppercase;
 
   color:#e0c8b0;
-margin-left: -10%;
+margin-left: -20%;
 }
 
-.circle4 h1,p{
 
-}
 
 .pastry_intro  {
     height:30rem;
@@ -256,6 +252,7 @@ margin-left: -10%;
   justify-content: center;
   align-items: end;
   margin-left: 20%;
+  margin-top: 20%;
 }
 
 .pastry_intro .text_items {
@@ -328,6 +325,7 @@ flex:1;
 background-color:#e0c8b0;
 flex-direction: column;
 color:#1c3027;
+margin-left: 10%;
 
 }
 
@@ -339,8 +337,8 @@ footer .email-text{
   border-radius: 10%;
   color:#1c3027;
 text-transform: capitalize;
-width:50%;
-  padding:1%;
+width:60%;
+  padding:2%;
   font-size: 15px;
 }
 
@@ -349,6 +347,38 @@ border-radius: 10%;
   font-size: 15px;
   text-transform: capitalize;
 color:#1c3027;
-padding:1%;
+padding:2%;
 }
 
+.swiper-container {
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+    
+    }
+    .swiper-slide {
+      background:#e0c8b0;
+      padding:5%;
+      text-align: center;
+      font-size: 18px;
+      line-height: 20px;
+      color: #000;
+      overflow: hidden;
+     margin-bottom: 10%;
+    }
+        .swiper-button-next{
+      color: #000;
+      font-size: 30px;
+      background-color:transparent;
+    }
+    .cards{
+      display: flex;
+      align-items:center;
+      justify-content: end;
+    }
+
+    .price{
+      padding-top: 3%;
+      color:#e0c8b07c;
+      display: block;
+    }

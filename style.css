@@ -13,7 +13,7 @@ body {
   font-family: "MyCustomFont", sans-serif; /* Use the custom font */
 }
 
-body {
+.page-home {
   font-family: Poppins;
   font-size: 16px;
   color: #1c3027;
@@ -29,7 +29,6 @@ body {
   padding: 0 10%;
   overflow-y: auto;
   overflow-x: hidden;
-  perspective: 10px;
 }
 .circle1 {
   background-color: rgba(28, 48, 39, 0.6);
@@ -67,7 +66,7 @@ body {
 }
 
 .navbar {
-  height: 8em;
+  height: 7em;
   font-family: poppins;
 }
 
@@ -132,9 +131,8 @@ header .container{
 }
 .icons_main_page {
   display: flex;
-
   position: absolute;
-  width: 40%;
+  width: 50%;
   top: 30em;
   left: 30em;
 }
@@ -222,12 +220,7 @@ margin-left: 2%;
   
 }
 
-.carousel-content{
-  display: flex;
-  margin-top: -5%;
-  height:40rem;
-  justify-content: space-between;
-}
+
 .circle4{
   height:25rem;
   width:25rem;
@@ -252,8 +245,12 @@ margin-left: -20%;
   justify-content: center;
   align-items: end;
   margin-left: 20%;
-  margin-top: 20%;
+
+
+
 }
+
+
 
 .pastry_intro .text_items {
   margin-top: 10%;
@@ -335,6 +332,7 @@ footer .copyright{
 }
 footer .email-text{
   border-radius: 10%;
+        border: 2px solid #1c3027;
   color:#1c3027;
 text-transform: capitalize;
 width:60%;
@@ -346,6 +344,7 @@ footer textarea{
 border-radius: 10%;
   font-size: 15px;
   text-transform: capitalize;
+        border: 2px solid #1c3027;
 color:#1c3027;
 padding:2%;
 }
@@ -382,3 +381,118 @@ padding:2%;
       color:#e0c8b07c;
       display: block;
     }
+
+    #submit-btn{
+      background-color: transparent;
+      width:30%;
+      padding:0.5em 1.5em ;
+      border: 2px solid #1c3027;
+      color: #1c3027;
+      text-transform: capitalize;
+      margin-top: 2%;
+      transition: color 0.25s, border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+    }
+
+    #submit-btn:hover{
+ color: #bb5c46;
+ font-weight:600;
+ box-shadow: 0 0.5em 0.5em -0.4em #bb5c46;
+ transform: translateY(-0.25em);
+
+
+    }
+
+
+    .careers{
+      background-color:rgba(28,48,39,0.6);
+      border-radius: 10px;
+      padding:10px 25px;
+      display: flex;
+      flex-direction: column;
+     
+      text-align: center;
+      text-transform: capitalize;
+      width:100%;
+    
+    }
+
+    .career-header{
+      font-family: 'Brawler';
+      font-weight: 600;
+      letter-spacing: 3px;
+      color:#e0c8b093;
+
+    }
+    .page-careers{
+      display: flex;
+      justify-content: center;
+      background-color: #e0c8b0;
+      align-items: center;
+      min-height: 100vh;
+      margin-top:2%;
+    }
+
+    .career-img{
+      width:80%;
+        margin-bottom:25px;
+    }
+  
+    
+
+    .career-available{
+            text-transform: uppercase;
+      margin-bottom: 40px;
+      
+
+    }
+   
+
+    .career-available:last-child{
+      border-bottom: none;
+    }
+    .career-info{
+      margin:50px 0 25px;
+  }
+
+  .career-info-item{
+    font-weight: 600;
+    letter-spacing: 1px;
+    color:#e0c8b0;
+    font-size: 0.7rem;
+    padding:15px 0;
+    border-top:1px solid #1c302755;
+    
+  }
+
+
+  .apply-now-btn{
+    border: 1px solid #e0c8b0;
+    color:#e0c8b0;
+    padding:15px 35px;
+    text-decoration: none;
+    margin:25px 0;
+    transition: background-color 200ms ease-in-out;
+  }
+  
+  .apply-now-btn:hover, .apply-now-btn:focus{
+  background-color: #e0c8b0;
+  color: #1c3027;
+  }
+
+  @media (min-width : 900px){
+    .careers{
+    flex-direction: row;
+    }
+    .career-available{
+            border-right:1px solid #1c302755;
+    }
+
+    .career-info{
+      border-bottom: none;
+          padding:25px 50px;
+    }
+
+    .career-available:last-child{
+      border-right: none;
+    }
+  }

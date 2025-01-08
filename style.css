@@ -148,45 +148,52 @@ header .container{
 }
 
 
-.coffee_intro .container{
+.coffee-intro .container{
   height:30rem;
   margin-bottom: 5%;
-}
-.coffee_intro .all_items {
   display: flex;
   justify-content: center;
+  position: relative;
+  
 
-  align-items: end;
-  margin-left: -18%;
 }
 
-.coffee_intro .text_items {
-  z-index: -1;
+
+.coffee-intro .all-items{
+  position: absolute;
+  left:35%;
+  z-index: 1;
+  
+}
+
+.coffee-intro .text-items {
   width: 20%;
 }
 
-.coffee_intro .text_items p {
+.coffee-intro .text-items p {
   font-size: 18px;
   text-transform: capitalize;
-    margin-top: -30px;
-  margin-left: 25%;
+    position:absolute;
+  left:6%;
+
 
 }
-.coffee_intro .text_items h1 {
+.coffee-intro .text-items h1 {
   text-transform: uppercase;
   font-size: 5rem;
 }
 
-.coffee_intro img {
-  z-index: 1;
-  height:530px;
-
-  left: 24%;
+.coffee-intro img {
+  z-index: -1;
+  height:540px;
+  left: -15%;
+  top:-35%;
   position: absolute;
 }
 
-.coffee_intro .text_items span {
-  margin-left: 25%;
+.coffee-intro .text-items span {
+position: relative;
+left:30%;
 }
 
 .card{
@@ -238,53 +245,54 @@ margin-left: -20%;
 }
 
 
-
-.pastry_intro  {
-    height:30rem;
+.pastry-intro .container{
+  height:30rem;
+  margin-bottom: 5%;
   display: flex;
   justify-content: center;
-  align-items: end;
-  margin-left: 20%;
-
-
+  position: relative;
+  
 
 }
 
 
+.pastry-intro .all-items{
+  position: absolute;
+  left:35%;
+  z-index: 1;
+  
+}
 
-.pastry_intro .text_items {
-  margin-top: 10%;
-  z-index: -1;
+.pastry-intro .text-items {
   width: 20%;
 }
-.pastry_intro .text_items p {
+
+.pastry-intro .text-items p {
   font-size: 18px;
   text-transform: capitalize;
-    margin-top: -30px;
-  margin-left: 25%;
-  width:100%;
+  position:absolute;
+  left:5%;
 
 
 }
-.pastry_intro .text_items h1 {
+.pastry-intro .text-items h1 {
   text-transform: uppercase;
   font-size: 5rem;
 }
 
-.pastry_intro img {
-  z-index: 1;
-    transform: rotate(90deg); 
-  height:480px;
-  top:-3rem;
-  left: -2rem;
+.pastry-intro img {
+  height:570px;
+  transform: rotate(45deg);
+  z-index: -1;
+  left: -15%;
+  top:-35%;
   position: absolute;
 }
 
-.pastry_intro .text_items span {
-  margin-left: 3rem;
+.pastry-intro .text-items span {
+position: relative;
+left:20%;
 }
-
-
 .footer-wrap{
   display: flex;
   height:20rem;
